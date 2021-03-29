@@ -11,6 +11,12 @@
 		EB6F948E2611832A0070673D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F948D2611832A0070673D /* ContentView.swift */; };
 		EB6F94902611832B0070673D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6F948F2611832B0070673D /* Assets.xcassets */; };
 		EB6F94932611832B0070673D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6F94922611832B0070673D /* Preview Assets.xcassets */; };
+		EB6F94A0261188620070673D /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F949F261188620070673D /* Persistance.swift */; };
+		EB6F94A4261196930070673D /* CoredataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F94A3261196930070673D /* CoredataManager.swift */; };
+		EB6F94A9261199480070673D /* MovieList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB6F94A7261199480070673D /* MovieList.xcdatamodeld */; };
+		EB6F94B726119D2B0070673D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F94B626119D2B0070673D /* HomeView.swift */; };
+		EB6F94BA26119DCF0070673D /* HomeVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F94B926119DCF0070673D /* HomeVIewModel.swift */; };
+		EB6F94C12611B15E0070673D /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F94C02611B15E0070673D /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		EB6F948F2611832B0070673D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6F94922611832B0070673D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB6F94942611832B0070673D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6F949F261188620070673D /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		EB6F94A3261196930070673D /* CoredataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManager.swift; sourceTree = "<group>"; };
+		EB6F94A8261199480070673D /* TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoList.xcdatamodel; sourceTree = "<group>"; };
+		EB6F94B626119D2B0070673D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB6F94B926119DCF0070673D /* HomeVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewModel.swift; sourceTree = "<group>"; };
+		EB6F94C02611B15E0070673D /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,17 @@
 		EB6F948A2611832A0070673D /* SwiftUICoreDataAzamSharp */ = {
 			isa = PBXGroup;
 			children = (
+				EB6F94B026119CF80070673D /* ViewModels */,
+				EB6F94AF26119CF20070673D /* Views */,
+				EB6F94AD26119CDE0070673D /* Models */,
+				EB6F94A22611966E0070673D /* Managers */,
 				EB6F948B2611832A0070673D /* SwiftUICoreDataAzamSharpApp.swift */,
 				EB6F948D2611832A0070673D /* ContentView.swift */,
 				EB6F948F2611832B0070673D /* Assets.xcassets */,
 				EB6F94942611832B0070673D /* Info.plist */,
 				EB6F94912611832B0070673D /* Preview Content */,
+				EB6F949F261188620070673D /* Persistance.swift */,
+				EB6F94A7261199480070673D /* MovieList.xcdatamodeld */,
 			);
 			path = SwiftUICoreDataAzamSharp;
 			sourceTree = "<group>";
@@ -67,6 +85,38 @@
 				EB6F94922611832B0070673D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB6F94A22611966E0070673D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F94A3261196930070673D /* CoredataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EB6F94AD26119CDE0070673D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB6F94AF26119CF20070673D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F94B626119D2B0070673D /* HomeView.swift */,
+				EB6F94C02611B15E0070673D /* MovieDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB6F94B026119CF80070673D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F94B926119DCF0070673D /* HomeVIewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6F948E2611832A0070673D /* ContentView.swift in Sources */,
+				EB6F94A4261196930070673D /* CoredataManager.swift in Sources */,
+				EB6F94A0261188620070673D /* Persistance.swift in Sources */,
+				EB6F94B726119D2B0070673D /* HomeView.swift in Sources */,
 				EB6F948C2611832A0070673D /* SwiftUICoreDataAzamSharpApp.swift in Sources */,
+				EB6F94A9261199480070673D /* MovieList.xcdatamodeld in Sources */,
+				EB6F94C12611B15E0070673D /* MovieDetailView.swift in Sources */,
+				EB6F94BA26119DCF0070673D /* HomeVIewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB6F94A7261199480070673D /* MovieList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB6F94A8261199480070673D /* TodoList.xcdatamodel */,
+			);
+			currentVersion = EB6F94A8261199480070673D /* TodoList.xcdatamodel */;
+			path = MovieList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB6F94802611832A0070673D /* Project object */;
 }
